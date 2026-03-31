@@ -1,0 +1,19 @@
+public class Banco {
+    private Conta[] lista;
+    private int totalDeContas;
+
+    public Banco(){
+        this.lista = new Conta[100];
+    }
+
+    public void adiciona(Conta c){
+        this.lista[this.totalDeContas] = c;
+        this.totalDeContas ++;
+    }
+    public Conta pega(int x){
+        return this.lista[x];
+    }
+    public int getTotalDeContas(){
+        return this.totalDeContas;
+    }
+}
